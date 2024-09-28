@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>My Enhanced Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Simple Website</h1>
+        <h1>Welcome to My Enhanced Website</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -21,20 +22,53 @@
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>This is a simple website created as an example.</p>
+            <p>This is an enhanced website created as an example.</p>
         </section>
         <section id="about">
             <h2>About</h2>
-            <p>This website serves as a basic template.</p>
+            <p>This website serves as a basic template with additional features.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>You can reach us at <a href="mahitotural@gmail.com">mahitotural@gmail.com</a>.</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            <p>You can also reach us at <a href="mailto:example@example.com">example@example.com</a>.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 My Simple Website</p>
+        <p>&copy; 2024 My Enhanced Website</p>
+        <div class="footer-links">
+            <a href="#home">Home</a> | 
+            <a href="#about">About</a> | 
+            <a href="#gallery">Gallery</a> | 
+            <a href="#contact">Contact</a>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById("contact-form").onsubmit = function() {
+            alert("Thank you for your message!");
+            return false; // Prevent actual submission for this example
+        };
+    </script>
 </body>
 </html>
