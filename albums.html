@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums - MAAHI TUTORIAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MAAHI TUTORIAL</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="albums">
+            <h2>Photo Albums</h2>
+            <div class="album-gallery">
+                <div class="album">
+                    <img src="photo1.jpg" alt="Album 1" onclick="openModal(this)">
+                    <p>Album 1</p>
+                </div>
+                <div class="album">
+                    <img src="album2.jpg" alt="Album 2" onclick="openModal(this)">
+                    <p>Album 2</p>
+                </div>
+                <div class="album">
+                    <img src="album3.jpg" alt="Album 3" onclick="openModal(this)">
+                    <p>Album 3</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MAAHI TUTORIAL. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

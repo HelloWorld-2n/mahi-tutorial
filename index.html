@@ -3,84 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Full Functional Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MAAHI TUTORIAL</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Full Functional Website</h1>
+        <div class="logo">
+            <img src="logo .jpg" alt="MAAHI TUTORIAL Logo" style="height: 60px;">
+            <h1 style="display: inline; margin-left: 10px;">MAAHI TUTORIAL</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is a full functional website created as an example.</p>
+        <section id="welcome">
+            <h2>Welcome to MAAHI TUTORIAL</h2>
+            <p>Your go-to platform for learning new skills and tutorials on various subjects!</p>
         </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This website serves as a template with additional features like a gallery and contact form.</p>
-        </section>
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery">
-                <img src="image1.jpg" alt="Image 1">
-                <img src="image2.jpg" alt="Image 2">
-                <img src="image3.jpg" alt="Image 3">
+
+        <section id="images">
+            <h2>Our Programs</h2>
+            <div class="image-gallery">
+                <div class="image-container">
+                    <img src="program1.jpg" alt="Program 1">
+                    <p>Web Development</p>
+                </div>
+                <div class="image-container">
+                    <img src="program2.jpg" alt="Program 2">
+                    <p>Data Science</p>
+                </div>
+                <div class="image-container">
+                    <img src="program3.jpg" alt="Program 3">
+                    <p>Digital Marketing</p>
+                </div>
             </div>
-            <form id="upload-form" enctype="multipart/form-data">
-                <input type="file" id="image-upload" accept="image/*" required>
-                <button type="submit">Upload Image</button>
-            </form>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-            <p>You can also reach us at <a href="mailto:example@example.com">example@example.com</a>.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 My Full Functional Website</p>
+        <p>&copy; 2024 MAAHI TUTORIAL. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        // Handle contact form submission
-        document.getElementById("contact-form").onsubmit = function(event) {
-            event.preventDefault(); // Prevent actual submission for this example
-            alert("Thank you for your message, " + document.getElementById("name").value + "!");
-            this.reset(); // Reset form fields
-        };
-
-        // Handle image upload (simulated)
-        document.getElementById("upload-form").onsubmit = function(event) {
-            event.preventDefault(); // Prevent actual submission for this example
-            const fileInput = document.getElementById("image-upload");
-            const file = fileInput.files[0];
-            if (file) {
-                alert("Image uploaded: " + file.name);
-                // You would send the file to the server here
-                fileInput.value = ""; // Reset file input
-            }
-        };
-    </script>
 </body>
 </html>
