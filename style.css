@@ -111,28 +111,36 @@ article h3 {
 }
 
 /* Album Gallery */
+/* Album Gallery */
 .album-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
     gap: 20px;
     padding: 20px;
-    height: auto;
-    width: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
+}
+
+.album-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.album-item h3 {
+    margin-top: 0; /* Remove top margin */
 }
 
 .album-item img {
     width: 100%;
-    height:auto;
-    object-fit: cover;
-    cursor: pointer;
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures images cover the area without distortion */
     border-radius: 5px;
-    transition: transform 0.3s ease;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth scale effect */
 }
 
 .album-item img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Scale effect on hover */
 }
 
 
