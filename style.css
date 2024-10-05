@@ -236,12 +236,12 @@ form input[type="submit"]:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px;
+    
 }
 
 .image-container {
     text-align: center;
-    margin: 10px;
+    
 }
 
 .image-container img {
