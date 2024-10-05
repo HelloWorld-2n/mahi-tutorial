@@ -87,11 +87,6 @@ article h3 {
 }
 
 /* Albums Section */
-.album-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
 .album {
     margin: 10px;
@@ -121,11 +116,15 @@ article h3 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
     gap: 20px;
     padding: 20px;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .album-item img {
     width: 100%;
-    height: 150px;
+    height:auto;
     object-fit: cover;
     cursor: pointer;
     border-radius: 5px;
@@ -144,7 +143,7 @@ form {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(0, 183, 255);
     max-width: 400px;
     margin: 0 auto;
     text-align: left;
