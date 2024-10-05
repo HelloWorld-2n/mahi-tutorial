@@ -1,1 +1,17 @@
 hi
+ cd /c/Users/Hp/Desktop/mahi\ totural
+ git init 
+ git add .
+ git commit -m "Initial commit
+ git push -u origin master
+
+
+                    **for update**
+
+
+git status
+git add .
+git commit -m "Updated website with [description of changes]"
+git push origin master
+
+ 

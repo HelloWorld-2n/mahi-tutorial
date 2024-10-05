@@ -115,6 +115,30 @@ article h3 {
     font-weight: bold;
 }
 
+/* Album Gallery */
+.album-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+}
+
+.album-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.album-item img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
 /* Contact Form */
 form {
     background: #fff;

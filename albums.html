@@ -9,7 +9,8 @@
 <body>
     <header>
         <div class="logo">
-            <h1>MAAHI TUTORIAL</h1>
+            <img src="logo .jpg" alt="MAAHI TUTORIAL Logo" style="height: 60px;">
+            <h1 style="display: inline; margin-left: 10px;">MAAHI TUTORIAL</h1>
         </div>
         <nav>
             <ul>
@@ -23,20 +24,29 @@
     </header>
 
     <main>
-        <section id="albums"> 
+        <section id="albums">
             <h2>Photo Albums</h2>
             <div class="album-gallery">
-                <div class="album">
-                    <img src="photo1.jpg" alt="Album 1" onclick="openModal(this)">
-                    <p>CHILDREN DAY</p>
+                <!-- Album 1: Teachers Day -->
+                <div class="album-item">
+                    <a href="teachers-day.html">
+                        <img src="album1-cover.jpg" alt="Teachers Day">
+                        <p>Teachers Day</p>
+                    </a>
                 </div>
-                <div class="album">
-                    <img src="photo 2.jpg" alt="Album 2" onclick="openModal(this)">
-                    <p>CELEBRATION</p>
+                <!-- Album 2: Children Day -->
+                <div class="album-item">
+                    <a href="children-day.html">
+                        <img src="album2-cover.avif" alt="Children Day">
+                        <p>Children Day</p>
+                    </a>
                 </div>
-                <div class="album">
-                    <img src="photo 3.jpg" alt="Album 3" onclick="openModal(this)">
-                    <p>TEACHERS DAY</p>
+                <!-- Album 3: Event -->
+                <div class="album-item">
+                    <a href="event.html">
+                        <img src="album3-cover.jpg" alt="Event">
+                        <p>Event</p>
+                    </a>
                 </div>
             </div>
         </section>
