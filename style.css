@@ -26,11 +26,17 @@ header .logo h1 {
 nav ul {
     display: flex;
     justify-content: center;
+    flex-direction: column; /* For stacking on mobile */
+    padding: 0;
     list-style: none;
 }
 
 nav ul li {
     margin: 0 15px;
+}
+
+nav li {
+    margin-bottom: 10px; /* Add spacing between items */
 }
 
 nav ul li a {
@@ -214,7 +220,7 @@ form input[type="submit"]:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .album-gallery {
@@ -270,6 +276,12 @@ nav ul li a.btn-result:hover {
     flex-wrap: wrap;
     margin-top: 20px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .image-container {
     text-align: center;
