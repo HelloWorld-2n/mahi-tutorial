@@ -8,7 +8,7 @@ hi
 
                     **for update**
 
-
+cd /c/Users/Hp/Desktop/mahi\ totural
 git status
 git add .
 git commit -m "Updated website with [description of changes]"

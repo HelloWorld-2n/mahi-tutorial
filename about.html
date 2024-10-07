@@ -4,12 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - MAAHI TUTORIAL</title>
+
+    <!-- Link to your external CSS file -->
     <link rel="stylesheet" href="style.css">
+    
+     <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff; /* Blue background */
+            padding: 15px 30px;
+        }
+
+        .navbar img {
+            height: 50px; /* Adjust based on the size of your logo */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section Styling */
+        .about-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #007bff; /* Blue color for the heading */
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .about-section h2 {
+            font-size: 24px;
+            color: #ff6347; /* Accent color for subheadings */
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 20px;
+            }
+
+            .about-section h1 {
+                font-size: 28px;
+            }
+
+            .about-section p {
+                font-size: 16px;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar a {
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>MAAHI TUTORIAL</h1>
+            <img src="logo.jpg" alt="MAAHI TUTORIAL Logo" style="height: 60px;">
+            <h1 style="display: inline; margin-left: 10px;">MAAHI TUTORIAL</h1>
         </div>
         <nav>
             <ul>
@@ -18,20 +111,53 @@
                 <li><a href="news.html">News</a></li>
                 <li><a href="albums.html">Albums</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="results.html" class="btn-result">Results</a></li> <!-- Added Result Button -->
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>At MAAHI TUTORIAL, we provide in-depth tutorials on a wide variety of topics including web development, programming, and much more. Our goal is to help you grow your skills and stay updated with the latest trends.</p>
-            <img src="about_image.jpg" alt="About Us" style="width:100%; max-width:600px; border-radius: 5px;">
-        </section>
-    </main>
+    <!-- About Section -->
+    <div class="about-section">
+        <h1>About MAAHI TUTORIAL</h1>
+        <p>
+            At MAAHI TUTORIAL, we understand that education is not just about passing exams—it's about building a strong foundation for a successful future. 
+            With this belief at our core, we provide top-notch coaching across a wide range of subjects, including Mathematics, Science, and Social Studies 
+            for classes 6 to 10, as well as specialized Physics coaching for students in classes 11 and 12. Our experienced faculty, with over 13 years of 
+            teaching expertise, bring a wealth of knowledge and insights to the classroom. We don’t just teach; we mentor, guide, and inspire our students 
+            to think critically and develop a deep understanding of the subjects.
+        </p>
 
-    <footer>
-        <p>&copy; 2024 MAAHI TUTORIAL. All Rights Reserved.</p>
-    </footer>
+        <h2>Personalized Coaching Approach</h2>
+        <p>
+            Our approach goes far beyond traditional classroom learning. At MAAHI TUTORIAL, we offer personalized coaching to cater to the specific needs of every student. 
+            We recognize that each student is unique, and so are their learning patterns. That’s why we ensure that individual attention is given to every learner. 
+            Whether a student needs help grasping complex concepts or extra motivation to stay on track, our one-on-one coaching sessions provide the personalized support 
+            needed to boost confidence and achieve academic excellence.
+        </p>
+
+        <h2>Interactive and Engaging Learning</h2>
+        <p>
+            We aim to create an environment that fosters curiosity and a love for learning, blending modern teaching techniques with traditional discipline to engage students on all levels. 
+            With interactive teaching methods, real-world applications of lessons, and regular assessments, we ensure that our students not only excel in their exams but also develop 
+            critical thinking skills that will benefit them throughout life. We equip students with the tools to tackle academic challenges, preparing them for competitive exams 
+            and paving the way for their long-term goals.
+        </p>
+
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is clear: to make every student successful, not just academically but in life. We are committed to helping them reach their fullest potential, 
+            nurturing their talents, and guiding them toward a brighter future. At MAAHI TUTORIAL, it’s not just about what’s in the books—it’s about preparing students 
+            to excel in a rapidly changing world. By instilling confidence, discipline, and a passion for learning, we ensure that our students are ready to face any challenge 
+            and come out on top.
+        </p>
+
+        <h2>Building Character and Success Stories</h2>
+        <p>
+            In addition to academic support, we place great emphasis on building character and personal growth. Our faculty doesn’t just focus on textbooks—they are mentors who shape 
+            the attitudes and ambitions of our students. We are proud of our students' success stories, where they have gone on to achieve top ranks in exams, securing positions 
+            in reputed institutions. At MAAHI TUTORIAL, your success is our mission, and we are with you every step of the way.
+        </p>
+    </div>
+    
 </body>
 </html>

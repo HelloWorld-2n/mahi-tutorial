@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - MAAHI TUTORIAL</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to your global CSS file -->
+    <style>
+        /* Styling for results page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header styling with logo and name */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+            background-color: #333333;
+        }
+
+        .header img {
+            width: 80px; /* Logo size */
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #ffffff;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        h1.page-title {
+            text-align: center;
+            color: #333;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .results-section {
+            margin: 20px 0;
+        }
+
+        .results-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #4CAF50; /* Green accent color */
+        }
+
+        .result-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .result-list li {
+            margin-bottom: 15px;
+        }
+
+        .result-list li a {
+            text-decoration: none;
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .result-list li a:hover {
+            background-color: #e5533d;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Header with Logo and Name -->
+        <header>
+            <div class="logo">
+                <img src="logo.jpg" alt="MAAHI TUTORIAL Logo" style="height: 60px;">
+                <h1 style="display: inline; margin-left: 10px;">MAAHI TUTORIAL</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="albums.html">Albums</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="results.html" class="btn-result">Results</a></li> <!-- Added Result Button -->
+                    
+                </ul>
+            </nav>
+        </header>
+        <h1 class="page-title">Class 10,12,JEE and NEET Results</h1>
+
+        <section class="results-section">
+            <h2>Class 10 Results</h2>
+            <ul class="result-list">
+                <li><a href="class10_result.pdf" target="_blank">Download Class 10 Result (PDF)</a></li>
+            </ul>
+        </section>
+
+        <section class="results-section">
+            <h2>Class 12 Results</h2>
+            <ul class="result-list">
+                <li><a href="class12_result.pdf" target="_blank">Download Class 12 Result (PDF)</a></li>
+            </ul>
+        </section>
+
+
+        
+        <!-- JEE Results -->
+        <section class="results-section">
+            <h2>JEE Results</h2>
+            <ul class="result-list">
+                <li><a href="jee_result.pdf" target="_blank">Download JEE Result (PDF)</a></li>
+            </ul>
+        </section>
+
+        <!-- NEET Results -->
+        <section class="results-section">
+            <h2>NEET Results</h2>
+            <ul class="result-list">
+                <li><a href="neet_result.pdf" target="_blank">Download NEET Result (PDF)</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 MAAHI TUTORIAL. All rights reserved.</p>
+    </footer>
+</body>
+</html>
