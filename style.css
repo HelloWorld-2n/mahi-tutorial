@@ -1,9 +1,4 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -26,7 +21,6 @@ header .logo h1 {
 nav ul {
     display: flex;
     justify-content: center;
-    flex-direction: column; /* For stacking on mobile */
     padding: 0;
     list-style: none;
 }
