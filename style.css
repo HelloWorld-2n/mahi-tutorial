@@ -181,9 +181,8 @@ form {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgb(0, 183, 255);
-    max-width: 40000px;
-    max-height: 40000px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 50px auto;
     text-align: left;
 }
 
@@ -193,6 +192,7 @@ form label {
 }
 
 form input[type="text"],
+form input[type="phone"],
 form input[type="email"],
 form textarea {
     width: 100%;

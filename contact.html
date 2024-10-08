@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header>
         <div class="logo">
             <img src="logo.jpg" alt="MAAHI TUTORIAL Logo" style="height: 60px;">
@@ -25,8 +26,14 @@
     </header>
 
     <main>
+
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, inquiries, or need assistance, feel free to reach out to us. We're here to help!</p>
+    
+           
+    
         <section id="contact">
-            <h2>Contact Us</h2>
             <p>Have questions or need support? Reach out to us!</p>
             <form id="contactForm" onsubmit="return validateForm()">
                 <label for="name">Name:</label>
@@ -35,13 +42,43 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
 
+                <label for="phone">Phone Number:</label><br>
+                <input type="text" id="phone" name="phone" required><br><br>
+
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
                 <input type="submit" value="Send">
             </form>
+
+             <!-- Contact Information -->
+             <div class="contact-info">
+                <p><strong>Email:</strong> info@maahitutorial.com</p>
+                <p><strong>Phone:</strong> +91-9608552723</p>
+                <p><strong>Address:</strong> Opp.Smart Bazar, Bailey Road, Near, Pillar No.-21, Patna-14</p>
+            </div>
+            
+            <!-- Social Media Links -->
+        <div class="contact-info">
+          <h2> <p>Follow us on:</p>
+            <a href="https://facebook.com/maahitutorial">Facebook</a> | 
+            <a href="https://instagram.com/maahitutorial">Instagram</a> | 
+            <a href="https://twitter.com/maahitutorial">Twitter</a></h2>
+        </div>
+        
+                 <!-- Google Maps Embed -->
+         <h2>Visit Us</h2>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d14392.730701805303!2d85.06561958912916!3d25.598845390829712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39ed57c70306bac5%3A0x9011839b4cc66027!2sMAAHI%20TUTORIAL%2C%2021%2C%20Jagdeo%20Path%2C%20opp.%20BIG%20BAZAR%2C%20near%20PILLOR%2C%20Anandpur%2C%20Khajpura%2C%20Patna%2C%20Bihar%20800014!3m2!1d25.6055949!2d85.0769059!5e0!3m2!1sen!2sin!4v1728390159545!5m2!1sen!2sin" width="400" height="400" style="border:0;" allowfullscreen="yes" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+         <!-- Business Hours (Optional) -->
+         <h2>Business Hours</h2>
+         <p>Monday to Friday: 9 AM - 6 PM</p>
+         <p>Saturday: 10 AM - 4 PM</p>
+         <p>Sunday: Closed</p>
+        </div>
         </section>
     </main>
+    
 
     <footer>
         <div class="footer-section">
