@@ -316,10 +316,10 @@ header {
 
 
 footer {
-    background-color: #333; /* Dark background color for contrast */
-    color: white; /* Text color */
+    background-color: #000000; /* Dark background color for contrast */
+    color: rgb(255, 255, 255); /* Text color */
     padding: 10px 20px; /* Smaller padding */
-    position: relative; /* Positioning */
+    position:relative; /* Positioning */
     width: 100%; /* Full width */
 }
 
@@ -332,12 +332,12 @@ footer {
 
 .footer-section {
     flex: 1; /* Equal space for each section */
-    min-width: 200px; /* Minimum width */
+    min-width: 2px; /* Minimum width */
     margin: 0 10px; /* Margin for spacing */
 }
 
 .footer-bottom {
     text-align: center; /* Center the copyright text */
-    font-size: 14px; /* Smaller font size */
+    font-size: 10px; /* Smaller font size */
 }
 
