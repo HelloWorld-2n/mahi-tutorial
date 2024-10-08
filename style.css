@@ -116,7 +116,6 @@ article h3 {
 }
 
 /* Album Gallery */
-/* Album Gallery */
 .album-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
@@ -341,3 +340,7 @@ footer {
     font-size: 10px; /* Smaller font size */
 }
 
+
+main {
+    margin-bottom: 100%;
+}
