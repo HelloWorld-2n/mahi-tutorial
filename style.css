@@ -181,7 +181,8 @@ form {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgb(0, 183, 255);
-    max-width: 400px;
+    max-width: 40000px;
+    max-height: 40000px;
     margin: 0 auto;
     text-align: left;
 }
